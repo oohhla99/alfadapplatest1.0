@@ -22,6 +22,7 @@ import './style.css'
 import Home from './views/Home'
 // import PageHome from './views/page'
 import ConnectWalletPage from './views/connect-wallet'
+import Home2 from './views/Home2'
 
 const { chains, provider } = configureChains(
   [ mainnet, polygon, optimism, arbitrum ],
@@ -55,6 +56,7 @@ const App = () => {
        <Routes>
          <Route path="/" element={<ConnectWalletPage />} />
          <Route path={`/${address}`} element={<Home />} />
+         <Route path={`/home-eth`} element={<Home2 />} />
       </Routes>
       </RainbowKitProvider>
       </WagmiConfig>

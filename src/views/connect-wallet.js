@@ -14,7 +14,7 @@ const ConnectWallet = (props) => {
    let navigate = useNavigate();
  
    // Alfa Token mainnet address is the contract address here
-   const contractAddress = "0x5609972dD1655455EAbc7019B9Df15F8d00640BA";
+   const contractAddress = "0x128ad1ad707c3B36e6F2ac9739f9dF7516FdB592";
 
    const {data: balanceOfCheck} = useContractRead({
     address: contractAddress,
@@ -46,10 +46,10 @@ const ConnectWallet = (props) => {
 
   // if user wallet does not have up to 5,000,00 ALFA TOKEN, this function will be called to the user attention
   const enterDapp = () => {
-    if (balance >= 5000000) {
+    if (balance >= 200000) {
      navigate(`/${address}`)
     } else {
-     toast.warning('You need to be holding atleast 5,000,000 (0.5%) $ALFA tokens before you can continue! Proceed by getting $ALFA token', {
+     toast.warning('You need to be holding atleast 200,000 (0.2%) $ALFA tokens before you can continue! Proceed by getting $ALFA token', {
      position: toast.POSITION.TOP_CENTER, 
      theme: "dark",
      draggablePercent: 60,
@@ -79,7 +79,7 @@ const ConnectWallet = (props) => {
             You need to be holding atleast 5,000,000 (0.5%) $ALFA tokens
           </span>
           <a
-            href="https://app.uniswap.org/#/swap?outputCurrency=0x5609972dD1655455EAbc7019B9Df15F8d00640BA&amp;chain=mainnet"
+            href="https://app.uniswap.org/#/swap?outputCurrency=0x128ad1ad707c3B36e6F2ac9739f9dF7516FdB592&amp;chain=mainnet"
             target="_blank"
             rel="noreferrer noopener"
             className="connect-wallet-link"

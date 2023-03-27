@@ -76,7 +76,7 @@ const ConnectWallet = (props) => {
           <h1 className="connect-wallet-text1">alfa.dapp</h1>
           <span className="connect-wallet-text2">society gate v1.0</span>
           <span className="connect-wallet-text3">
-            You need to be holding atleast 5,000,000 (0.5%) $ALFA tokens
+            You need to be holding atleast 200,000 (0.2%) $ALFA tokens
           </span>
           <a
             href="https://app.uniswap.org/#/swap?outputCurrency=0x128ad1ad707c3B36e6F2ac9739f9dF7516FdB592&amp;chain=mainnet"

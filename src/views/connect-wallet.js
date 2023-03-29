@@ -99,7 +99,7 @@ const {data: balanceOfCheck2} = useContractRead({
           <button className="connect-wallet-button themebutton button"
           onClick={!isConnected ? connectWalletError : enterDapp}
           >
-            enter dapp
+            enter
           </button>
         </div>
       </div>

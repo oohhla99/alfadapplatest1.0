@@ -15,9 +15,18 @@ const ConnectWallet = (props) => {
  
    // Alfa Token mainnet address is the contract address here
    const contractAddress = "0x128ad1ad707c3B36e6F2ac9739f9dF7516FdB592";
+//ALphawolves NFT ca
+   const contractAddress2 = "0xdcd6d4a557ff208f01D4c2b5Bf829078622C37c5";
 
    const {data: balanceOfCheck} = useContractRead({
     address: contractAddress,
+    abi: contractABI,
+    functionName: 'balanceOf',
+    args: [address]
+  })
+
+const {data: balanceOfCheck2} = useContractRead({
+    address: contractAddress2,
     abi: contractABI,
     functionName: 'balanceOf',
     args: [address]
@@ -30,6 +39,7 @@ const ConnectWallet = (props) => {
   // const bal = balanceOfCheck
   // console.log(bal)
   const balance = (balanceOfCheck ? hexToDecimal(balanceOfCheck._hex)/1e18 : 0 );
+  const balance2 = parseInt(balanceOfCheck2, 16);
   console.log(balance);
 
   // if user wallet is not connected, this function will be called to the user attention
@@ -46,7 +56,7 @@ const ConnectWallet = (props) => {
 
   // if user wallet does not have up to 5,000,00 ALFA TOKEN, this function will be called to the user attention
   const enterDapp = () => {
-    if (balance >= 200000) {
+    if (balance >= 200000 || balance2 >= 1) {
      navigate(`/${address}`)
     } else {
      toast.warning('You need to be holding atleast 200,000 (0.2%) $ALFA tokens before you can continue! Proceed by getting $ALFA token', {

@@ -21,8 +21,8 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>alfa dapp</title>
-        <meta property="og:title" content="alfa dapp" />
+        <title>whitelist wallet addresses - alfa.society</title>
+        <meta property="og:title" content="whitelist wallet addresses - alfa.society" />
       </Helmet>
       <section className="home-hero">
         <div className="home-menu">

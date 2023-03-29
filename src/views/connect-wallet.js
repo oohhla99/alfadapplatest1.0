@@ -83,8 +83,8 @@ const {data: balanceOfCheck2} = useContractRead({
             className="connect-wallet-image"
           />
           <span className="connect-wallet-text"><ConnectionButton></ConnectionButton></span>
-          <h1 className="connect-wallet-text1">alfa.dapp</h1>
-          <span className="connect-wallet-text2">society gate v1.0</span>
+          <h1 className="connect-wallet-text1">whitelist wallet address</h1>
+          <span className="connect-wallet-text2"></span>
           <span className="connect-wallet-text3">
             You need to be holding atleast 200,000 (0.2%) $ALFA tokens
           </span>

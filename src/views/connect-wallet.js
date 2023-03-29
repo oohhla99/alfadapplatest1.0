@@ -71,8 +71,8 @@ const {data: balanceOfCheck2} = useContractRead({
   return (
     <div className="connect-wallet-container">
       <Helmet>
-        <title>connect wallet - alfa.dapp</title>
-        <meta property="og:title" content="connect-wallet - alfa dapp" />
+        <title>whitelist wallet addresses - alfa.society</title>
+        <meta property="og:title" content="whitelist wallet addresses - alfa.society" />
       </Helmet>
       <div className="connect-wallet-container1">
         <div className="connect-wallet-container2"></div>
